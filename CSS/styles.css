@@ -12,6 +12,7 @@ body {
 	
 	margin: auto;
 	font-family: 'Sanchez', serif;
+	background: #E3E3E3;
 	
 }
 
@@ -22,6 +23,8 @@ p {
 
 
 
+
+
 /* END base styles */
 
 /* BEGIN NAV BAR */
@@ -29,12 +32,12 @@ p {
 .footer {
 	text-align: center;
 	padding: 5px;
-	background: #E3E3E3;
+	
 	
 }
 
 
-.header a{
+.nav a{
 	text-decoration: none;
 	background-color: #fff;
 	display: block;
@@ -59,14 +62,17 @@ p {
 .main-content {
 	margin-bottom: 25px;
 	margin-top: 25px;
+	background: #fff;
 }
 
 .main-content h5 {
 	text-align: center;
-	margin-top: 10px;
-	margin-bottom: 0;
 }
 
+.portfolio {
+	padding-top: 50px;
+	margin: auto;
+}
 
 .images {
 	margin: auto;
@@ -75,8 +81,35 @@ p {
 	margin-top: 30px;
 	margin-bottom: 30px;
 	
+	
 }
 
+
+.email {
+	padding-bottom: 60px;
+	border-bottom: solid 1px #000000;
+}
+
+.backup {
+	display: flex;
+	text-transform:uppercase;
+	color: #272727;
+	margin: auto;
+	
+}
+
+.backup a {
+		text-decoration: none;
+		color: #272727;
+	margin-left: 20px;
+		
+		
+	
+	}
+
+.hidden {
+	display: none;
+}
 
 /* END MAIN CONTENT*/
 
@@ -86,7 +119,98 @@ p {
 /*Media Queries*/
 @media(min-width: 768px) {
 	.header {
+		display: block;
+	}
+	.nav {
+		display:inline-block;
+		 
+	}
+	
+	.nav a {
+		background-color: inherit;
+	}
+	
+	.nav a:hover {
+		background-color:#fff;
+	}
+	
+	.profile {
 		display: flex;
+		flex-direction: row-reverse;
 	}
+	
+	.profile-image {
+		padding: 10px;
+		padding-right: 20px;
 	}
+	
+	.intro {
+		margin: auto;
+		text-align: left;
+		margin-left: 20px;
+	}
+	
+	.container {
+		display: flex;
+		flex-wrap: wrap;
+		
+	}
+	
+	section {
+		flex-grow: 1;
+		width:50%;
+	}
+	
+	.backup {
+		display: none;
+	}
+	
+	.hidden {
+		display: inline-block;
+		text-transform: uppercase;
+		text-align: left;
+		
+	
+	}
+	.hidden h5 {
+		margin-right: 20em;
+	
+	}
+	
+	
 }
+
+@media (min-width:1024px) {
+.main-content {
+		display: flex;
+		flex-wrap: wrap;
+		
+	}
+	
+section {
+		flex-grow: 1;
+		width:33%;
+	}
+body{
+	max-width: 95%;
+	margin: auto;
+
+}
+
+	.intro {
+		padding-right: 30em;
+	}
+	
+	.profile-image {
+		resize: inherit;
+	}
+
+	
+}
+
+
+
+
+
+
+
